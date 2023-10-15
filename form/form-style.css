@@ -1,0 +1,27 @@
+fieldset {
+    margin: 1.0em 0rem;
+}
+input[type] {
+    margin-bottom: 0.5rem;
+}
+a {
+    font-size: 0.7em;
+}
+.email{
+    margin-left:0.5rem;
+}
+.name{
+    margin-left:6.5rem;
+}
+.address,.number{
+    margin-left:5.5rem;
+}
+.tel,.date{
+    margin-left:3.5rem;
+}
+.radio{
+    margin-left:5.5rem;
+}
+.number,input[type="radio"],input[type="checkbox"]{
+    margin-right:0.5rem;
+}
