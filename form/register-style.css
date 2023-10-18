@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+p {
+    margin-bottom: 0px;
+}
+
+th {
+    background-color: rgba(107, 91, 89, 0.781);
+    text-align: left;
+    width: 15em;
+    padding: 1.0em 0;
+    color:white;
+
+}
+
+td {
+    background-color: blanchedalmond;
+    width: 35em;
+    padding: 0.4em 0;
+}
+
+/* 必須のスタイル */
+.required {
+    font-size: 0.5em;
+    color: white;
+    background-color: red;
+    border-radius: 20%;
+    margin-left: 0.7em;
+    margin-right: 0.7em;
+}
+
+/* ()の部分のスタイル */
+.supplement {
+    font-size: 0.5rem;
+}
+
+button {
+    text-align: center;
+    width: 15em;
+}
+
+input[name="firstname"] {
+    margin-right: 1.0em;
+}
+
+textarea {
+    margin-top: 0.8em;
+}
+
+input[name="homenumber"],
+input[name="homeaddres"] {
+    background-color: rgba(186, 183, 183, 0.842);
+}
+
+input[name="homenumber"] {
+    margin-top: 0.7em;
+}
+
+input[name="building_number"] {
+    margin-bottom:0.7em;
+}
