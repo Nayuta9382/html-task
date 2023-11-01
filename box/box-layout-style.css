@@ -38,7 +38,7 @@ h2 {
 }
 
 .butom {
-    background-color: rgb(230, 19, 19);
+  
     display: block;
     border-radius: 30px;
     width: 20%;
@@ -62,13 +62,23 @@ h1 {
     text-align: center;
     margin: 0 auto;
 }
+.image :hover {
+    transform: rotate(30deg);
+}
 
-
+.butom:link{
+    background-color: rgb(230, 19, 19);
+    color:black;
+}
+.butom:visited{
+    background-color: rgb(165, 66, 94);
+    color:black;
+}
 .butom:hover {
     background-color: rgb(255, 0, 0);
     color: black;
 }
-
-.image :hover {
-    transform: rotate(30deg);
+.butom:active{
+    background-color: aqua;
 }
+
