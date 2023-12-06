@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>気になる企業</title>
+    <!-- reset.css modern-css-reset   リセットcssは一番上に書く-->
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/company-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Yuji+Syuku&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../img/all-img/favicon.ico">
+</head>
+
+<body>
+    <!-- ヘッター部 -->
+    <header>
+        <div class="header-top">
+            <h1>HTML/CSS中間課題</h1>
+            <div class="header_name">
+                <h3>高度情報工学科</h3>
+                <h3>4233117</h3>
+                <h3>熊谷奈友多</h3>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><img src="../img/all-img/home.png" alt="home.png" class="memu_img1">
+                        <div class="memu">TOP</div>
+                    </a></li>
+                <li><a href="../it_history/it_history.html"><img src="../img/all-img/it.png" alt="it.png"
+                            class="memu_img2">
+                        <div class="memu">ITの歴史</div>
+                    </a></li>
+                <li><a href="#"><img src="../img/all-img/company.png" alt="company.png" class="memu_img2">
+                        <div class="memu">気になる企業</div>
+                    </a></li>
+                <li><a href="../news/news.html"><img src="../img/all-img/news.png" alt="news.png" class="memu_img2">
+                        <div class="memu">ニュース・出来事</div>
+                    </a></li>
+                <li><a href="../self_introduction/self-introduction.html"><img src="../img/all-img/human.png"
+                            alt="human.png" class="memu_img1">
+                        <div class="memu">自己紹介</div>
+                    </a></li>
+            </ul>
+            <ol class="breadcrumbs">
+                <li>現在地：</li>
+                <li><a href="../index.html">TOP</a></li>
+                <li><a href="#">気になる企業</a></li>
+            </ol>
+        </nav>
+    </header>
+
+
+    <!-- メイン部 -->
+    <main>
+        <h1>気になる企業</h1>
+        <!-- 一つのコンテンツ -->
+        <div class="main_div">
+            <div class="side_menu">
+
+            </div>
+            <div class="mainpeg">
+                <div id="top-img">
+                    <img src="../img/top-img/itオフィス.jpg">
+                </div>
+                <p>このページでは、私が気になっている企業ではなく、気になっている職種(サーバーサイドエンジニア)についての情報や私が考えてた魅力が書かれています。
+                    興味のある方はぜひご覧ください。
+                </p>
+                <article>
+                    <section>
+                        <h2>目次 </h2>
+                        <ul>
+                            <!-- id名許してください。 -->
+                            <li><a href="#p1">サーバーサイドエンジニアとは</a></li>
+                            <li><a href="#p2">なぜサーバーサイドエンジニアに興味を持ったのか</a></li>
+                            <li><a href="#p3">サーバーサイドエンジニアになるためにやるべきごと</a></li>
+                        </ul>
+                    </section>
+                    <section id="p1">
+                        <h2>サーバーサイドエンジニアとは</h2>
+                        <img src="../img/company-img/sarver.jpg">
+                        <p>サーバーサイドエンジニアとはサーバー側で行う処理に必要なプログラムを開発や、データの管理を行うエンジニアのことを指します。
+                            具体的な仕事はウェブサイトやウェブアプリケーション開発やデータベース管理・セキュリティ対策などを行っています。
+                            使用されるプログラミング言語はJava・PHP・Ruby・C・C+など様々な言語を使用されています。
+                        </p>
+
+                        <p>サーバーサイドエンジニアはバックエンドエンジニアに近く、ユーザーの目に触れない部分の設計や開発・運用を行っています。
+                            バックエンドとは反対にフロントエンドエンジニアはユーザーに見える部分(画面など)を設計や開発をしています。
+                            目にする機会が多いのはフロントエンド部分のため、一般の方々にあまりイメージしにくい仕事だと思います。
+                        </p>
+                    </section>
+                    <section id="p2">
+                        <h2>なぜサーバーサイドエンジニアに興味を持ったのか</h2>
+                        <img src="../img/company-img/pc-img.jpg">
+                        <p>なぜ私がサーバーサイドエンジニアに興味を持った理由は2つあります。</p>
+                        <p>一つ目は、プログラミングをしてアプリケーションを作りたいからです。<br>
+                            今学んでいる教科の中で一番やりがいがあるのがJavaなどのプログラミングをし、思い通りのアプリケーションを作ることです。
+                            実際細かく計画を立て、細かく設計をし、コーディングするところなどが自分に向いていると思ったからです。
+                        </p>
+                        <p>
+                            二つ目は、レイアウトなどを設計することが苦手だからです。<br>
+                            HTMLやCSSなどでコーディングすることなどは好きだが画面設計をする際にレイアウトを考えるのが苦手だからです。
+                            レイアウトが決まっているものをコーディングする分にはいいですが、仕事場ではそうも行かないと思うので、自分が得意な仕事につきたいと
+                            考えたためサーバーサイドエンジニアを目指したいと思いました。
+                        </p>
+                    </section>
+                    <section id="p3">
+                        <h2>サーバーサイドエンジニアになるためにやるべきごと</h2>
+                        <img src="../img/company-img/stady.jpg">
+                        <p>二年後の就活そして四年後の就職後サーバーサイドエンジニアとして就職・働くためにに必要なこと
+                            を二つ考えました。
+                        </p>
+                        <p>一つ目は、サーバーサイドでよく使用されるプログラム言語やツールを学生生活中に学習することです。
+                            学校で習うjavaやPythonだけでなく、C,C++などの現場でよく使用されている言語や、linuxやデータベースなどのシステム
+                            を学ぶことで働く上での技術を身に着けられると思ったからです。
+                        </p>
+                        <p>
+                            二つ目は、サーバーサイドの現場の知識や常識などの技術面以外の知識を学習することです。<br>
+                            実際の現場で働く上では技術だけでなく、設計の仕方・業界用語・業界の常識などの現場でのあたり前のことを知っておくことで、
+                            実際働く時に良いと思ったからです。
+                        </p>
+                    </section>
+                </article>
+
+            </div>
+            <!-- バナー情報など -->
+            <aside>
+                <div class="saito">
+                    <h3>参考にしたサイト</h3>
+                    <a href="https://qiita.com/" target="_blank" rel="noopener noreferrer">
+                        <h3>Qiita</h3>
+                        <img src="../img/all-img/Qiita.png">
+                        <p>このサイトはインターネット上にあるサイトでHTML・CSSのみならず、javaやSQLなど、様々な
+                            言語の解説がわかりやすくかかれているサイトです。
+                        </p>
+                    </a>
+
+                </div>
+                <div id="page_top"><a href="#"><img src="../img/all-img/arrow.png" alt="arrow"></a></div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- フッター部 -->
+    <footer>
+        <div class="footer_flex">
+            <div class="residence">
+                <h3>所在地</h3>
+                <p>岩手県盛岡市中央道3-2-17</p>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.5517811555574!2d141.14021717597595!3d39.704780671562936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f857630971ceb65%3A0xa71278d9c8f84080!2zTUNM55ub5bKh5oOF5aCx44OT44K444ON44K577yG44OH44K244Kk44Oz5bCC6ZaA5a2m5qChIOODh-OCtuOCpOODs-aDheWgsemkqA!5e0!3m2!1sja!2sjp!4v1700099740155!5m2!1sja!2sjp"
+                        width="70%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="sns">
+                <h3>各種SNS</h3>
+                <div class="icon">
+                    <a href="https://twitter.com/morijyobi_olive" target="_blank" rel="noopener noreferrer"
+                        class="twitter"><img src="../img/all-img/twitterbird_.png" alt="twitter"></a>
+                    <a href="https://www.instagram.com/morijyobi_official/" target="_blank"
+                        rel="noopener noreferrer"><img src="../img/all-img/instagram_.png" alt="instagram"></a>
+                    <a href="https://www.facebook.com/morijyobi/" target="_blank" rel="noopener noreferrer"><img
+                            src="../img/all-img/facebook_.png" alt="facebook"></a>
+                </div>
+
+            </div>
+            <div class="address">
+                <h3>連絡網</h3>
+                <div class="e-mail">
+                    <ul>
+                        <li>n.kumagai.sys23@morijyobi.ac.jp</li>
+                        <li>k.kamata.sys23@morijyobi.ac.jp</li>
+                        <li>y.hatano.sys23@morijyobi.ac.jp</li>
+                        <li>h.koyama.sys23@morijyobi.ac.jp</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="copy">
+            <p>&copy; 2023 Student. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

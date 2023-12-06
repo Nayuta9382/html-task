@@ -1,0 +1,55 @@
+/*記述済みの部分は変更しないでください！*/
+
+@charset "utf-8";
+
+
+.mark-list {
+    list-style: "★";
+    margin-top: 2.5rem;
+
+}
+
+#anser+.label {
+    display: none;
+    content: "クリック前（checkbox OFF）";
+    color: blue;
+}
+
+#anser:checked+.label {
+    display: block;
+    content: "クリック後（checkbox ON）";
+    color: red;
+}
+
+.mark-list li {
+    margin: 2rem 0;
+}
+
+.mark-list h2 {
+    padding-bottom: 1rem;
+}
+
+.mark-list ul li p {
+    white-space: nowrap;
+}
+
+.anser_img {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#animal {
+    height: 10rem;
+    width: 20rem;
+    margin-left: 1rem;
+}
+
+#animal-link {
+    color: rgb(57, 155, 212);
+    text-decoration: none;
+
+}
+
+#animal-link:hover {
+    text-decoration: underline;
+}

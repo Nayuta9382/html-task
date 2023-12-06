@@ -1,0 +1,75 @@
+article {
+    margin: 2rem 0;
+}
+
+
+
+section h3 {
+
+    margin-bottom: 1rem;
+}
+
+section {
+
+    margin-bottom: 6rem;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+
+section p {
+    margin-top: 2rem;
+
+}
+
+section td+td {
+    padding-left: 3rem;
+
+}
+
+section td {
+    padding-bottom: 0.5rem;
+}
+
+.supplement {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+.it_history-table {
+    margin-top: 2rem;
+    width: 70%;
+    height: auto;
+    word-break: break-all;
+}
+
+.it_history-table img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+article table td a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+table tr td a:hover {
+    color: rgba(15, 14, 14, 0.763);
+    background-color: rgba(217, 248, 248, 0.112);
+    text-decoration: underline;
+}
+
+figcaption a {
+    text-decoration: none;
+    color: black;
+}
+
+figcaption cite a:hover {
+    text-decoration: underline;
+}
