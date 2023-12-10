@@ -9,24 +9,16 @@
 
 }
 
-#anser+.label {
-    display: none;
-    content: "クリック前（checkbox OFF）";
-    color: blue;
-}
 
-#anser:checked+.label {
-    display: block;
-    content: "クリック後（checkbox ON）";
-    color: red;
-}
+
 
 .mark-list li {
     margin: 2rem 0;
 }
 
-.mark-list h2 {
+.mark-list li h2{
     padding-bottom: 1rem;
+   
 }
 
 .mark-list ul li p {
