@@ -1,0 +1,1257 @@
+
+header a{ 
+    text-decoration: none;
+    color: black;
+}
+body *:not(.bac-top,header,.fast-anime,.bac-white){
+    position: relative;
+    z-index: 10;
+}
+
+
+body{
+   position: relative;
+   top:0;
+   padding-top: 8rem;
+}
+header{
+    background : linear-gradient(180deg, white 0%, white 65%, transparent 65%, transparent 100%);
+ }
+
+.fast-anime{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    z-index: 2000;
+    animation: fast-img-none 5s linear ; 
+    animation-fill-mode: forwards;
+    background-color: rgba(199, 197, 197, 0.365);
+
+}
+.bac-white{
+    position: fixed!important;
+    top:0;
+    z-index: 1200!important;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    animation: fast-img-none 5s ease ; 
+    animation-fill-mode: forwards;
+  }
+.anime_div{
+    width: 60%;
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    animation-fill-mode: forwards;
+}
+.anime_div img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    animation: fast-img 5s ease ;
+}
+.line{
+    height: 5px;
+    width: 100%;
+    background-color: red;
+    position: relative;
+    z-index: 2001; 
+    animation: fast-line 5s ease ; 
+}
+@keyframes fast-img {
+    0%{
+    left: 0%;
+      opacity: 1;
+    }
+   
+    80%{
+        left: 90%;
+        opacity: 1;
+    }
+    100%{
+        left: 100%;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fast-line {
+    0%{
+      width: 8%;
+      opacity: 1;
+    }
+    60%{
+      opacity: 1;
+    }
+    80%{
+        width: 100%;
+        opacity: 1;
+    }
+    100%{
+      width: 100%;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fast-img-none {
+    0%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    95%{
+        display: none;
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+       display: none;
+    }
+}
+
+.bac-top{
+    background-image: url(../img/原神ロゴ.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;   
+    opacity: 0.15;
+    position: fixed;
+    top: 0;
+    animation-name: bac-scroll;
+    animation-timeline: scroll(block nearest);
+    
+
+}
+#title{
+  font-size: 4rem;
+  text-align: center;
+  
+}
+#explanation{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-left: 8%;
+}
+#table-title{
+    margin-top: 4rem;
+    margin-left: 3rem;
+    font-size: 2.5rem;
+}
+@keyframes bac-scroll {
+    0%{
+    
+    }
+     10.29%{
+    background-image: url("../img/原神ロゴ.png");
+     
+    }
+    10.3%{
+        background-image: none;
+    }
+    100%{
+        background-image: none;
+    }
+  }
+  @keyframes top-menu-kill {
+    0%{
+        opacity: 1;
+    }
+    10.29%{
+        opacity: 1;
+    }
+    10.3%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes menu-scroll {
+    0%{
+     opacity: 0;
+     position: relative;
+     left: -30%;
+    }
+     10.3%{
+     opacity: 0; 
+     left: -30%;
+     
+    }
+    12.7%{
+        opacity: 1;
+        left: 0%;
+    }
+  }
+
+
+
+  .menu{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 301!important; 
+    width: 94%;
+    margin: 0 auto;
+    list-style: none;
+    animation-name:top-menu-kill;
+    animation-timeline: scroll(block nearest);
+}
+.menu li{
+    width: 33%;
+    margin-top: 1rem;
+}
+
+.menu a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.menu img{
+    height: 80px;
+    width: 80px;
+}
+.menu p{
+    font-size: 1.8rem;
+    vertical-align: middle;
+    padding-top: 1.1rem;
+    margin-left: 0.5rem;
+    font-weight:600;
+}
+.ul_flex_layout li:nth-child(1){
+    animation-name:under-bar-Wind;
+    animation-timeline: scroll(block nearest);
+  
+}
+ .ul_flex_layout li:nth-child(2){
+
+    animation-name:under-bar-rock;
+    animation-timeline: scroll(block nearest);
+}
+.ul_flex_layout li:nth-child(3){
+    animation-name:under-bar-thunder;
+    animation-timeline: scroll(block nearest);
+}
+.ul_flex_layout li:nth-child(4){
+    animation-name:under-bar-grass;
+    animation-timeline: scroll(block nearest);
+}
+.ul_flex_layout li:nth-child(5){
+    animation-name:under-bar-water;
+    animation-timeline: scroll(block nearest); 
+}
+.ul_flex_layout li:nth-child(6){
+    animation-name: under-bar-fire; 
+    animation-timeline: scroll(block nearest); 
+}
+.ul_flex_layout li:nth-child(7){
+    animation-name:under-bar-ice;
+    animation-timeline: scroll(block nearest);
+} 
+
+
+
+@keyframes under-bar-Wind{
+    0%{
+        background-color:transparent;
+    }
+    12.79%{
+        background-color:transparent;
+    }
+    12.8%{
+        background-color: rgb(234, 253, 251);
+    }
+    26.89%{
+        background-color: rgb(234, 253, 251);
+    }
+    26.9%{
+        background-color:transparent;
+    }
+    100%{
+        background-color:transparent;
+    }
+  }
+  @keyframes under-bar-rock{
+    0%{
+        background-color:transparent;
+    }
+    26.89%{
+        background-color:transparent;
+    }
+    26.9%{
+        background-color: rgb(250, 241, 193);
+    }
+    40.79%{
+        background-color: rgb(250, 241, 193);
+    }
+    40.8%{
+        background-color:transparent;
+    }
+    100%{
+        background-color:transparent;
+    }
+  }
+  @keyframes under-bar-thunder{
+    0%{
+        background-color:transparent;
+    }
+    40.89%{
+        background-color:transparent;
+    }
+    40.9%{
+        background-color: rgb(246, 234, 253);
+    }
+    53.29%{
+        background-color: rgb(246, 234, 253);
+    }
+    53.3%{
+        background-color:transparent;
+    }
+    100%{
+        background-color:transparent;
+    }
+  }
+
+  @keyframes under-bar-grass{
+    0%{
+        background-color:transparent;
+    }
+    53.29%{
+        background-color:transparent;
+    }
+    53.3%{
+        background-color: rgb(237, 252, 218);
+    }
+    67.29%{
+        background-color: rgb(237, 252, 218);
+    }
+    67.3%{
+        background-color:transparent;
+    }
+    100%{
+        background-color:transparent;
+    }
+  }
+  @keyframes  under-bar-water{
+    0%{
+        background-color:transparent;
+    }
+    67.29%{
+        background-color:transparent;
+    }
+    67.3%{
+        background-color: rgb(199, 211, 252);
+    }
+    78.19%{
+        background-color: rgb(199, 211, 252);
+    }
+    78.2%{
+        background-color:transparent;
+    }
+    100%{
+        background-color:transparent;
+    }
+  }
+  @keyframes  under-bar-fire{
+    0%{
+        background-color:transparent;
+    }
+    78.19%{
+        background-color:transparent;
+    }
+    78.2%{
+        background-color: rgb(252, 199, 199);
+    }
+    94.49%{
+        background-color: rgb(252, 199, 199);
+    }
+    94.5%{
+        background-color:transparent;
+    }
+    100%{
+        background-color:transparent;
+    }
+  }
+  @keyframes under-bar-ice{
+    0%{
+        background-color:transparent;
+    }
+    94.49%{
+        background-color:transparent;
+    }
+    94.5%{
+        background-color: rgb(234, 250, 253);
+    }
+    100%{
+        background-color: rgb(234, 250, 253);
+    }
+  }
+main{
+    display: flex;
+    padding-top: 3.5rem;
+}
+.menu_div{
+    width: 22%;
+    
+    margin-top: 3.2rem;
+    border-right: 1.5px black solid;
+    animation-name: menu-scroll;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest);
+}
+.menu_div ul{
+    position: sticky;
+    top:20vh;
+    list-style: none;
+    padding:0;
+}
+.menu_div li{
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+   
+}
+.menu_div a{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.menu_div img{
+    height: 40px;
+    width: 40px;
+}
+.menu_div p{
+    font-size: 1.1rem;
+    padding-top: 7px;
+    margin-left: 5px;
+}
+
+
+.country{
+    width: 78%;
+    padding: 0 5%;
+    padding-bottom: 3rem;
+}
+.country div:not(#sunejinaya){
+    margin-bottom: 3rem;
+}
+.country div:not(.country-img){
+    padding-top: 3.2rem;
+}
+.country h1{
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    margin-left: 1vw;
+}
+.country h2{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.country img{
+   margin: 0 auto;
+   margin-bottom: 1rem;
+}
+.country img:not(.country-img img){
+    width: 65vw;
+    height: 27vw;
+    object-fit: cover;
+    object-position: 10% 30%;
+}
+.country-img{
+    width:65vw;
+    height: 27vw;
+}
+.country-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 50%;
+}
+.country p{
+    font-size: 1.2rem;
+}
+
+
+
+@media screen and (min-width:1051px) and (max-width:1100px){
+ 
+    
+  }
+  @media screen and (min-width:1001px) and (max-width:1050px){
+
+
+  }
+  @media screen and (min-width:881px) and (max-width:1000px){
+    .bac-top{
+        top: 20%;
+        left: 0%;
+        background-size: cover;
+        height: 500px;
+    }
+
+    #title{
+        font-size: 3.2rem;
+    }
+    .menu li{
+        width: 250px;
+    }
+    .menu img{
+        height: 60px;
+        width: 60px;
+    }
+    .menu p{
+        font-size: 1.2rem;
+    }
+    @keyframes fast-img {
+        0%{
+        left: -10%;
+          opacity: 1;
+        }
+       
+        80%{
+            left: 85%;
+            opacity: 1;
+        }
+        100%{
+            left: 95%;
+            opacity: 0;
+            display: none;
+        }
+    }
+  
+  }
+  
+
+  @media screen and (min-width:481px) and (max-width:880px){
+  
+    header{
+        background : linear-gradient(180deg, white 0%, white 55%, transparent 55%, transparent 100%);
+     }
+     .country div:not(#sunejinaya){
+        margin-bottom: 0rem;
+    }
+    .country{
+        width: 70vw;
+    }
+    .country h1{
+        margin-bottom: 0.3rem;
+    
+    }
+    .anime_div img{
+        height: 70px;
+        width: 70px;
+        top: -80px;
+        right: 0;
+    }
+    @keyframes bac-scroll {
+        0%{
+        
+        }
+         17.29%{
+        background-image: url("../img/原神ロゴ.png");
+         
+        }
+        17.3%{
+            background-image: none;
+        }
+        100%{
+            background-image: none;
+        }
+      }
+      @keyframes top-menu-kill {
+        0%{
+            opacity: 1;
+        }
+        17.29%{
+            opacity: 1;
+        }
+        17.3%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    @keyframes menu-scroll {
+        0%{
+         opacity: 0;
+         position: relative;
+         left: -30%;
+        }
+         17.3%{
+         opacity: 0; 
+         left: -30%;
+         
+        }
+        19.7%{
+            opacity: 1;
+            left: 0%;
+        }
+      }
+    @keyframes under-bar-Wind{
+        0%{
+            background-color:transparent;
+        }
+        17.79%{
+            background-color:transparent;
+        }
+        17.8%{
+            background-color: rgb(234, 253, 251);
+        }
+        31.89%{
+            background-color: rgb(234, 253, 251);
+        }
+        31.9%{
+            background-color:transparent;
+        }
+        100%{
+            background-color:transparent;
+        }
+      }
+      @keyframes under-bar-rock{
+        0%{
+            background-color:transparent;
+        }
+        31.89%{
+            background-color:transparent;
+        }
+        31.9%{
+            background-color: rgb(250, 241, 193);
+        }
+        45.79%{
+            background-color: rgb(250, 241, 193);
+        }
+        45.8%{
+            background-color:transparent;
+        }
+        100%{
+            background-color:transparent;
+        }
+      }
+      @keyframes under-bar-thunder{
+        0%{
+            background-color:transparent;
+        }
+        45.79%{
+            background-color:transparent;
+        }
+        45.8%{
+            background-color: rgb(246, 234, 253);
+        }
+        58.29%{
+            background-color: rgb(246, 234, 253);
+        }
+        58.3%{
+            background-color:transparent;
+        }
+        100%{
+            background-color:transparent;
+        }
+      }
+    
+      @keyframes under-bar-grass{
+        0%{
+            background-color:transparent;
+        }
+        58.29%{
+            background-color:transparent;
+        }
+        58.3%{
+            background-color: rgb(237, 252, 218);
+        }
+        72.29%{
+            background-color: rgb(237, 252, 218);
+        }
+        72.3%{
+            background-color:transparent;
+        }
+        100%{
+            background-color:transparent;
+        }
+      }
+      @keyframes  under-bar-water{
+        0%{
+            background-color:transparent;
+        }
+        72.29%{
+            background-color:transparent;
+        }
+        72.3%{
+            background-color: rgb(199, 211, 252);
+        }
+        86.19%{
+            background-color: rgb(199, 211, 252);
+        }
+        86.2%{
+            background-color:transparent;
+        }
+        100%{
+            background-color:transparent;
+        }
+      }
+      @keyframes  under-bar-fire{
+        0%{
+            background-color:transparent;
+        }
+        86.19%{
+            background-color:transparent;
+        }
+        86.2%{
+            background-color: rgb(252, 199, 199);
+        }
+        96.49%{
+            background-color: rgb(252, 199, 199);
+        }
+        96.5%{
+            background-color:transparent;
+        }
+        100%{
+            background-color:transparent;
+        }
+      }
+      @keyframes under-bar-ice{
+        0%{
+            background-color:transparent;
+        }
+        96.49%{
+            background-color:transparent;
+        }
+        96.5%{
+            background-color: rgb(234, 250, 253);
+        }
+        100%{
+            background-color: rgb(234, 250, 253);
+        }
+      }
+ 
+
+  }
+
+   @media screen and (min-width:701px) and (max-width:880px){
+    .bac-top{
+        top: 20%;
+        background-size: cover;
+        height: 500px
+    }
+    #title{
+        font-size: 3.2rem;
+    }
+    #explanation{
+        font-size: 1.3rem;
+    }
+    #table-title{
+        font-size: 2rem;
+    }
+    .menu li{
+        width: 300px;
+    }
+    .menu img{
+        height: 60px;
+        width: 60px;
+    }
+    .menu p{
+        font-size: 1.5rem;
+        padding-top: 0.6rem;
+    }
+    .menu_div{
+        width:220px;
+    }
+    .menu_div li{
+        padding-left: 0.8rem;
+    }
+    .menu_div img{
+        height: 30px;
+        width: 30px;
+    }
+    .menu_div p{
+        padding-top: 3px;
+        font-size: 1rem;
+    }
+    .country h1{
+        font-size: 1.8rem;
+    }
+  
+    .country h2{
+        font-size: 1.2rem;
+    }
+    .country p{
+        font-size: 1rem;
+    }
+    @keyframes fast-img {
+        0%{
+        left: -5%;
+          opacity: 1;
+        }
+       
+        80%{
+            left: 90%;
+            opacity: 1;
+        }
+        100%{
+            left: 100%;
+            opacity: 0;
+            display: none;
+        }
+    }
+  }
+  @media screen and (min-width:801px) and (max-width:880px){
+  }
+  @media screen and (min-width:701px) and (max-width:800px){
+  }
+
+
+  @media screen and (min-width:551px) and (max-width:700px){
+    .bac-top{
+        top: 30%;
+        background-size: cover;
+        height: 350px
+    }
+    #title{
+        font-size: 2.5rem;
+    }
+    #explanation{
+        font-size: 1.3rem;
+    }
+    #table-title{
+        font-size: 2rem;
+    }
+    .menu li{
+        width: 230px;
+    }
+    .menu img{
+        height: 45px;
+        width: 45px;
+    }
+    .menu p{
+        font-size: 1.2rem;
+        padding-top: 0.6rem;
+    }
+    .menu_div{
+        width:220px;
+    }
+    .menu_div li{
+        padding-left: 0.8rem;
+    }
+    .menu_div img{
+        height: 30px;
+        width: 30px;
+    }
+    .menu_div p{
+        padding-top: 6.5px;
+        font-size: 0.8rem;
+    }
+    .country h1{
+        font-size: 1.4rem;
+    }
+    .country h2{
+        font-size: 1rem;
+    }
+    .country p{
+        font-size: 0.8rem;
+    }
+    @keyframes fast-img {
+        0%{
+        left: -5%;
+          opacity: 1;
+        }
+       
+        80%{
+            left: 80%;
+            opacity: 1;
+        }
+        100%{
+            left: 90%;
+            opacity: 0;
+            display: none;
+        }
+    }
+  }
+  @media screen and (min-width:650px) and (max-width:700px){
+  }
+  @media screen and (min-width:600px) and (max-width:649px){
+}
+@media screen and (min-width:551px) and (max-width:599px){
+}
+
+
+  @media screen and (min-width:481px) and (max-width:550px){
+    .bac-top{
+        top: 30%;
+        background-size: cover;
+        height: 250px;
+    }
+    #title{
+        font-size: 2rem;
+    }
+    #explanation{
+        font-size: 1.1rem;
+    }
+    #table-title{
+        font-size: 1.7rem;
+    }
+    .menu li{
+        width: 180px;
+    }
+    .menu img{
+        height: 35px;
+        width: 35px;
+    }
+    .menu p{
+        font-size: 0.9rem;
+        padding-top: 0.5rem;
+    }
+    .menu_div{
+        width:160px;
+    }
+    .menu_div li{
+        padding-left: 0.5rem;
+    }
+    .menu_div img{
+        height: 25px;
+        width: 25px;
+    }
+    .menu_div p{
+        padding-top: 5.5px;
+        font-size: 0.7rem;
+    }
+    .country h1{
+        font-size: 1.3rem;
+    }
+    .country h2{
+        font-size: 0.9rem;
+    }
+    .country p{
+        font-size: 0.8rem;
+    }
+    @keyframes fast-img {
+        0%{
+        left: -5%;
+          opacity: 1;
+        }
+       
+        80%{
+            left: 80%;
+            opacity: 1;
+        }
+        100%{
+            left: 90%;
+            opacity: 0;
+            display: none;
+        }
+    }
+  }
+
+  @media screen and (max-width:480px){
+    .bac-top{
+        top: 35%;
+        background-size: cover;
+        height: 200px;
+    }  
+    header{
+        background : linear-gradient(180deg, white 0%, white 55%, transparent 55%, transparent 100%);
+     }
+     
+    #title{
+        font-size: 1.7rem;
+    }
+    #explanation{
+        font-size: 1.1rem;
+    }
+    #table-title{
+        font-size: 1.7rem;
+    }
+
+    .menu li{
+        width: 300px;
+        margin-left: 0.5rem;
+    }
+    .menu img{
+        height: 45px;
+        width: 45px;
+    }
+    .menu p{
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+    }
+    .menu_div{
+        width:110px;
+    }
+
+    .menu_div li{
+        padding-left: 0.2rem;
+    }
+    .menu_div img{
+        height: 23px;
+        width: 23px;
+    }
+    .menu_div p{
+        padding-top: 4.5px;
+        font-size: 0.65rem;
+        margin-left: 0.1rem;
+    }
+    .country{
+        width: 70vw;
+    }
+    .country div:not(#sunejinaya){
+        margin-bottom:0 ;
+    }
+    .country h1{
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+    .country h2{
+        font-size: 0.7rem;
+    }
+    .country p{
+        font-size: 0.6rem;
+    }
+    @keyframes top-menu-kill {
+        0%{
+            opacity: 1;
+        }
+        27.29%{
+            opacity: 1;
+        }
+        27.3%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    @keyframes bac-scroll {
+        0%{
+        
+        }
+         27.29%{
+        background-image: url("../img/原神ロゴ.png");
+         
+        }
+        27.3%{
+            background-image: none;
+        }
+        100%{
+            background-image: none;
+        }
+      }
+    @keyframes menu-scroll {
+        0%{
+         opacity: 0;
+         position: relative;
+         left: -30%;
+        }
+         27.3%{
+         opacity: 0; 
+         left: -30%;
+         
+        }
+        29.7%{
+            opacity: 1;
+            left: 0%;
+        }
+      }
+      @keyframes under-bar-Wind{
+        0%{
+            background-color:transparent;
+        }
+        31.79%{
+            background-color:transparent;
+        }
+        31.8%{
+            background-color: rgb(234, 253, 251);
+        }
+        40.89%{
+            background-color: rgb(234, 253, 251);
+        }
+        40.9%{
+            background-color:transparent;
+        }
+        100%{
+            background-color:transparent;
+        }
+      }
+      @keyframes under-bar-rock{
+        0%{
+            background-color:transparent;
+        }
+        40.89%{
+            background-color:transparent;
+        }
+        40.9%{
+            background-color: rgb(250, 241, 193);
+        }
+        54.79%{
+            background-color: rgb(250, 241, 193);
+        }
+        54.8%{
+            background-color:transparent;
+        }
+        100%{
+            background-color:transparent;
+        }
+      }
+      @keyframes under-bar-thunder{
+        0%{
+            background-color:transparent;
+        }
+        54.79%{
+            background-color:transparent;
+        }
+        54.8%{
+            background-color: rgb(246, 234, 253);
+        }
+        67.29%{
+            background-color: rgb(246, 234, 253);
+        }
+        67.3%{
+            background-color:transparent;
+        }
+        100%{
+            background-color:transparent;
+        }
+      }
+    
+      @keyframes under-bar-grass{
+        0%{
+            background-color:transparent;
+        }
+        67.29%{
+            background-color:transparent;
+        }
+        67.3%{
+            background-color: rgb(237, 252, 218);
+        }
+        80.29%{
+            background-color: rgb(237, 252, 218);
+        }
+        80.3%{
+            background-color:transparent;
+        }
+        100%{
+            background-color:transparent;
+        }
+      }
+      @keyframes  under-bar-water{
+        0%{
+            background-color:transparent;
+        }
+        80.29%{
+            background-color:transparent;
+        }
+        80.3%{
+            background-color: rgb(199, 211, 252);
+        }
+        89.19%{
+            background-color: rgb(199, 211, 252);
+        }
+        89.2%{
+            background-color:transparent;
+        }
+        100%{
+            background-color:transparent;
+        }
+      }
+      @keyframes  under-bar-fire{
+        0%{
+            background-color:transparent;
+        }
+        89.19%{
+            background-color:transparent;
+        }
+        89.2%{
+            background-color: rgb(252, 199, 199);
+        }
+        99.49%{
+            background-color: rgb(252, 199, 199);
+        }
+        99.5%{
+            background-color:transparent;
+        }
+        100%{
+            background-color:transparent;
+        }
+      }
+      @keyframes under-bar-ice{
+        0%{
+            background-color:transparent;
+        }
+        99.49%{
+            background-color:transparent;
+        }
+        99.5%{
+            background-color: rgb(234, 250, 253);
+        }
+        100%{
+            background-color: rgb(234, 250, 253);
+        }
+      }
+      .anime_div img{
+        top: -55px;
+        right: 0;
+        animation: fast-img 5s ease ;
+    }
+      .anime_div img{
+        height:50px;
+        width: 50px;
+    }
+    @keyframes fast-img {
+        0%{
+        left: -10%;
+          opacity: 1;
+        }
+       
+        80%{
+            left: 80%;
+            opacity: 1;
+        }
+        100%{
+            left: 90%;
+            opacity: 0;
+            display: none;
+        }
+    }
+}
+  @media screen and (max-width:390px){
+    .main-bac-img{
+       background-size: 150px;
+       background-position: 170px 250px;
+    }
+    .country{
+        width: 275px;
+    }
+    .country img,.country-img img,.country-img{
+        width: 235px!important;
+        height: 106px!important;
+    }
+  }
+  @media screen and (min-width:480px){
+    a{ 
+        text-decoration: none;
+        color: black;
+    }
+    .menu li:hover a,.menu_div li:hover a{
+        color: rgb(79, 79, 79);
+    }
+  }
+  @media screen and (min-width:1500px){
+    .country img:not(.country-img img){
+        width: 975px;
+        height: 405px;
+    }
+    .country-img{
+        width: 975px;
+        height: 405px;
+    }
+   
+  }
+

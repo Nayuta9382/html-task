@@ -1,0 +1,1830 @@
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+body *:not(.bac-top,header,.fast-anime,.bac-white){
+    position: relative;
+    z-index: 10;
+}
+
+body{
+   position: relative;
+   top:0;
+   padding-top: 8rem;
+}
+header{
+   background : linear-gradient(180deg, white 0%, white 65%, transparent 65%, transparent 100%);
+}
+
+header h1 a{
+display: block;
+}
+
+.fast-anime{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    z-index: 2000;
+    animation: fast-img-none 5s linear ; 
+    animation-fill-mode: forwards;
+    background-color: rgba(199, 197, 197, 0.365);
+}
+.bac-white{
+    position: fixed!important;
+    top:0;
+    z-index: 1200;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    animation: fast-img-none 5s ease ; 
+    animation-fill-mode: forwards;
+    pointer-events: none; 
+  }
+  .anime_div{
+    width: 60%;
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    animation-fill-mode: forwards;
+}
+.anime_div img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    animation: fast-img 5s ease ;
+}
+.line{
+    height: 5px;
+    width: 100%;
+    background-color: red;
+    position: relative;
+    z-index: 2001; 
+    animation: fast-line 5s ease ; 
+}
+@keyframes fast-img {
+    0%{
+    left: 0%;
+      opacity: 1;
+    }
+   
+    80%{
+        left: 90%;
+        opacity: 1;
+    }
+    100%{
+        left: 100%;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fast-line {
+    0%{
+      width: 8%;
+      opacity: 1;
+    }
+    60%{
+      opacity: 1;
+    }
+    80%{
+        width: 100%;
+        opacity: 1;
+    }
+    100%{
+      width: 100%;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fast-img-none {
+    0%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    95%{
+        display: none;
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+       display: none;
+    }
+}
+
+
+.bac-top{
+    background-image: url(../img/原神ロゴ.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.15;
+    position: fixed;
+    top: 0;
+    animation-name: bac-scroll;
+    animation-timeline: scroll(block nearest);
+    
+
+}
+#title{
+  font-size: 4rem;
+  text-align: center;
+  
+}
+#explanation{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-left: 8%;
+}
+#table-title{
+    margin-top: 4rem;
+    margin-left: 3rem;
+    font-size: 2.5rem;
+}
+.menu{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 301!important; 
+    width: 94%;
+    margin: 0 auto;
+    list-style: none;
+    animation-name:top-menu-kill;
+    animation-timeline: scroll(block nearest);
+}
+.menu li{
+    width: 290px;
+    margin-top: 1rem;
+}
+
+.menu a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.menu img{
+    height: 70px;
+    width: 70px;
+}
+.menu p{
+    font-size: 1.4rem;
+    vertical-align: middle;
+    padding-top: 1.1rem;
+    margin-left: 0.5rem;
+    font-weight:600;
+}
+
+main{
+    display: flex;
+}
+.menu_div{
+    width:280px;
+    margin-top: 7rem;
+    border-right: 1.5px black solid;
+    animation-name: menu-scroll;
+    animation-duration: 5s; 
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest);
+}
+.menu_div ul{
+    position: sticky;
+    top:20vh;
+    list-style: none;
+    padding:0;
+}
+
+.ul_flex_layout li:nth-child(1){
+    animation-name: under-bar-fire;
+    animation-timeline: scroll(block nearest);
+}
+.ul_flex_layout li:nth-child(2){
+    animation-name:under-bar-water;
+    animation-timeline: scroll(block nearest);
+}
+.ul_flex_layout li:nth-child(3){
+    animation-name:under-bar-ice;
+    animation-timeline: scroll(block nearest);
+}
+.ul_flex_layout li:nth-child(4){
+    animation-name:under-bar-thunder;
+    animation-timeline: scroll(block nearest);
+}
+.ul_flex_layout li:nth-child(5){
+    animation-name:under-bar-Wind;
+    animation-timeline: scroll(block nearest);
+}
+.ul_flex_layout li:nth-child(6){
+    animation-name:under-bar-rock;
+    animation-timeline: scroll(block nearest);
+}
+.ul_flex_layout li:nth-child(7){
+    animation-name:under-bar-grass;
+    animation-timeline: scroll(block nearest);
+}
+.menu_div li{
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+   
+}
+.menu_div a{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.menu_div img{
+    height: 40px;
+    width: 40px;
+}
+.menu_div p{
+    font-size: 1.1rem;
+    padding-top: 7px;
+    margin-left: 5px;
+}
+
+.character{
+    width: 78%;
+    padding-top: 3rem;
+}
+.character *{
+    background-color: transparent!important;
+}
+.character h2{
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-top: 7rem;
+    position: relative;
+    z-index: 302!important;
+    margin-bottom: 1rem;
+}
+.character_div{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    width: 96%;
+    margin: 0 auto;
+    border-spacing: 3vw;
+    border-bottom: 2px solid rgb(207, 198, 198);
+
+}
+.character-ex{
+    list-style: none;;
+    padding: 0;
+    width: 32%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+   
+}
+.character-ex:not(.no-boder-pc){
+    border-bottom: 2px solid rgb(207, 198, 198);
+
+}
+.character h3{
+    text-align: center;
+    font-size: 2rem;
+}
+.li1 {
+    height: 1vw;
+}
+.li2{
+    height: 50%;
+}
+.flex{
+    display: flex;
+}
+.character h4, .character p{
+    font-size: 1.25rem;
+    margin-left: 10%;
+}
+
+.character img{
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 18vw;
+    height: 18vw;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+.character_div{
+    background-size:50%;
+    background-position:65% ;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-color: none;
+    position: relative;
+    z-index: 300!important; 
+}
+
+.main-bac-img{
+    width: 100%;
+    height: 100vh;
+    animation-name:bac-scroll-fire ;
+    animation-timeline: scroll(block nearest);
+    background-image: url(./img/炎.png); 
+    background-size:40%;
+    background-position: 65% 80px ;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    position: fixed!important;
+    z-index: 200!important;
+    top: 0px;
+}
+@keyframes top-menu-kill {
+    0%{
+        opacity: 1;
+    }
+    3.49%{
+        opacity: 1;
+    }
+    3.5%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes menu-scroll {
+    0%{
+     opacity: 0;
+     position: relative;
+     left: -30%;
+    }
+     3.5%{
+     opacity: 0; 
+     left: -30%;
+     
+    }
+    4%{
+        opacity: 1;
+        left: 0%;
+    }
+  }
+
+  @keyframes bac-scroll {
+    0%{
+    
+    }
+     3.49%{
+    background-image: url("../img/原神ロゴ.png");
+     
+    }
+    3.5%{
+        background-image: none;
+    }
+    100%{
+        background-image: none;
+    }
+  }
+  @keyframes bac-scroll-fire {
+    0%{
+    background-image: none;
+    }
+     3.49%{
+    background-image: none;
+     
+    }
+    3.5%{
+     background-image: url(./img/炎.png);
+    }
+    21.49%{
+        background-image: url(./img/炎.png);
+    }
+    21.5%{
+        background-image: url(./img/水.png);
+    }
+    34.9%{
+        background-image: url(./img/水.png);
+    }
+    35%{
+        background-image: url(./img/氷.png);
+    }
+    52.9%{
+        background-image: url(./img/氷.png);
+    }
+    53%{
+        background-image: url(./img/雷.png);
+    }
+    66.19%{
+        background-image: url(./img/雷.png);
+    }
+    66.2%{
+        background-image: url(./img/風.png);
+    }
+    80.89%{
+        background-image: url(./img/風.png);
+    }
+    80.9%{
+        background-image: url(./img/岩.png);
+    }
+    91.79%{
+        background-image: url(./img/岩.png);
+    }
+    91.8%{
+        background-image: url(./img/草.png);
+    }
+    100%{
+        background-image: url(./img/草.png);
+    }
+  }
+
+  @keyframes  under-bar-fire{
+    0%{
+        background-color:transparent;
+    }
+    3.59%{
+        background-color:transparent;
+    }
+    3.6%{
+        background-color: rgb(252, 199, 199);
+    }
+    21.49%{
+        background-color: rgb(252, 199, 199);
+    }
+    21.5%{
+        background-color:transparent;
+    }
+    100%{
+        background-color:transparent;
+    }
+  }
+  @keyframes  under-bar-water{
+    0%{
+        background-color:transparent;
+    }
+    21.49%{
+        background-color:transparent;
+    }
+    
+    21.5%{
+        background-color: rgb(199, 211, 252);
+    }
+    34.9%{
+        background-color: rgb(199, 211, 252);
+    }
+    35%{
+        background-color:transparent;
+    }
+    100%{
+        background-color:transparent;
+    }
+  }
+  @keyframes  under-bar-ice{
+    0%{
+        background-color:transparent;
+    }
+    34.9%{
+        background-color:transparent;
+    }
+    35%{
+        background-color: rgb(234, 250, 253);
+    }
+    52.9%{
+        background-color: rgb(234, 250, 253);
+    }
+    53%{
+        background-color:transparent;
+    }
+
+    100%{
+        background-color:transparent;
+    }
+  }
+
+  @keyframes under-bar-thunder{
+    0%{
+        background-color:transparent;
+    }
+    52.9%{
+        background-color:transparent;
+    }
+    53%{
+        background-color: rgb(246, 234, 253);
+    }
+    66.19%{
+        background-color: rgb(246, 234, 253);
+    }
+    66.2%{
+        background-color:transparent;
+    }
+    100%{
+        background-color:transparent;
+    }
+  }
+
+  @keyframes under-bar-Wind{
+    0%{
+        background-color:transparent;
+    }
+    66.19%{
+        background-color:transparent;
+    }
+    66.2%{
+        background-color: rgb(234, 253, 251);
+    }
+    80.89%{
+        background-color: rgb(234, 253, 251);
+    }
+    80.9%{
+        background-color:transparent;
+    }
+    100%{
+        background-color:transparent;
+    }
+  }
+  @keyframes under-bar-rock{
+    0%{
+        background-color:transparent;
+    }
+    80.89%{
+        background-color:transparent;
+    }
+    80.9%{
+        background-color: rgb(250, 241, 193);
+    }
+    91.79%{
+        background-color: rgb(250, 241, 193);
+    }
+    91.8%{
+        background-color:transparent;
+    }
+    100%{
+        background-color:transparent;
+    }
+  }
+  @keyframes under-bar-grass{
+    0%{
+        background-color:transparent;
+    }
+    91.79%{
+        background-color:transparent;
+    }
+    91.8%{
+        background-color: rgb(237, 252, 218);
+    }
+    100%{
+        background-color: rgb(237, 252, 218);
+    }
+  }
+
+
+  
+  @media screen and (min-width:1051px) and (max-width:1100px){
+    @keyframes top-menu-kill {
+        0%{
+            opacity: 1;
+        }
+        3.49%{
+            opacity: 1;
+        }
+        3.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    @keyframes bac-scroll {
+        0%{
+        
+        }
+         3.49%{
+        background-image: url("../img/原神ロゴ.png");
+         
+        }
+        3.5%{
+            background-image: none;
+        }
+        100%{
+            background-image: none;
+        }
+      }
+      @keyframes bac-scroll-fire {
+        0%{
+        background-image: none;
+        }
+         3.49%{
+        background-image: none;
+         
+        }
+        3.5%{
+         background-image: url(./img/炎.png);
+        }
+        21.49%{
+            background-image: url(./img/炎.png);
+        }
+        21.5%{
+            background-image: url(./img/水.png);
+        }
+        34.9%{
+            background-image: url(./img/水.png);
+        }
+        35%{
+            background-image: url(./img/氷.png);
+        }
+        52.9%{
+            background-image: url(./img/氷.png);
+        }
+        53%{
+            background-image: url(./img/雷.png);
+        }
+        66.19%{
+            background-image: url(./img/雷.png);
+        }
+        66.2%{
+            background-image: url(./img/風.png);
+        }
+        80.89%{
+            background-image: url(./img/風.png);
+        }
+        80.9%{
+            background-image: url(./img/岩.png);
+        }
+        91.79%{
+            background-image: url(./img/岩.png);
+        }
+        91.8%{
+            background-image: url(./img/草.png);
+        }
+        100%{
+            background-image: url(./img/草.png);
+        }
+      }
+    
+  }
+  @media screen and (min-width:1001px) and (max-width:1050px){
+    @keyframes top-menu-kill {
+        0%{
+            opacity: 1;
+        }
+        4.09%{
+            opacity: 1;
+        }
+        4.1%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    @keyframes bac-scroll {
+        0%{
+        
+        }
+         4.09%{
+        background-image: url("../img/原神ロゴ.png");
+         
+        }
+        4.1%{
+            background-image: none;
+        }
+        100%{
+            background-image: none;
+        }
+      }
+      @keyframes bac-scroll-fire {
+        0%{
+        background-image: none;
+        }
+         4.09%{
+        background-image: none;
+         
+        }
+        4.1%{
+         background-image: url(./img/炎.png);
+        }
+        21.49%{
+            background-image: url(./img/炎.png);
+        }
+        21.5%{
+            background-image: url(./img/水.png);
+        }
+        34.9%{
+            background-image: url(./img/水.png);
+        }
+        35%{
+            background-image: url(./img/氷.png);
+        }
+        52.9%{
+            background-image: url(./img/氷.png);
+        }
+        53%{
+            background-image: url(./img/雷.png);
+        }
+        66.19%{
+            background-image: url(./img/雷.png);
+        }
+        66.2%{
+            background-image: url(./img/風.png);
+        }
+        80.89%{
+            background-image: url(./img/風.png);
+        }
+        80.9%{
+            background-image: url(./img/岩.png);
+        }
+        91.79%{
+            background-image: url(./img/岩.png);
+        }
+        91.8%{
+            background-image: url(./img/草.png);
+        }
+        100%{
+            background-image: url(./img/草.png);
+        }
+      }
+    @keyframes menu-scroll {
+        0%{
+         opacity: 0;
+         position: relative;
+         left: -30%;
+        }
+         4.1%{
+         opacity: 0; 
+         left: -30%;
+         
+        }
+        4.6%{
+            opacity: 1;
+            left: 0%;
+        }
+      }
+  }
+  @media screen and (min-width:881px) and (max-width:1000px){
+    .bac-top{
+        top: 20%;
+        left: 0%;
+        background-size: cover;
+        height: 500px;
+    }
+    @keyframes top-menu-kill {
+        0%{
+            opacity: 1;
+        }
+        4.59%{
+            opacity: 1;
+        }
+        4.6%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    @keyframes bac-scroll {
+        0%{
+        
+        }
+         4.59%{
+        background-image: url("../img/原神ロゴ.png");
+         
+        }
+        4.6%{
+            background-image: none;
+        }
+        100%{
+            background-image: none;
+        }
+      }
+      @keyframes bac-scroll-fire {
+        0%{
+        background-image: none;
+        }
+         4.59%{
+        background-image: none;
+         
+        }
+        4.6%{
+         background-image: url(./img/炎.png);
+        }
+        21.49%{
+            background-image: url(./img/炎.png);
+        }
+        21.5%{
+            background-image: url(./img/水.png);
+        }
+        34.9%{
+            background-image: url(./img/水.png);
+        }
+        35%{
+            background-image: url(./img/氷.png);
+        }
+        52.9%{
+            background-image: url(./img/氷.png);
+        }
+        53%{
+            background-image: url(./img/雷.png);
+        }
+        66.19%{
+            background-image: url(./img/雷.png);
+        }
+        66.2%{
+            background-image: url(./img/風.png);
+        }
+        80.89%{
+            background-image: url(./img/風.png);
+        }
+        80.9%{
+            background-image: url(./img/岩.png);
+        }
+        91.79%{
+            background-image: url(./img/岩.png);
+        }
+        91.8%{
+            background-image: url(./img/草.png);
+        }
+        100%{
+            background-image: url(./img/草.png);
+        }
+      }
+    @keyframes menu-scroll {
+        0%{
+         opacity: 0;
+         position: relative;
+         left: -30%;
+        }
+         4.6%{
+         opacity: 0; 
+         left: -30%;
+         
+        }
+        5.1%{
+            opacity: 1;
+            left: 0%;
+        }
+      }
+      #title{
+        font-size: 3.2rem;
+    }
+    .menu li{
+        width: 250px;
+    }
+    .menu img{
+        height: 60px;
+        width: 60px;
+    }
+    .menu p{
+        font-size: 1.2rem;
+    }
+    .main-bac-img{
+        background-position: 70% 150px ;
+    }
+    .character h2{
+        padding-top: 3.5rem;
+    }
+    .character h3{
+        font-size: 1.7rem;
+    }
+    .character h4, .character p{
+        font-size: 1.1rem;
+    }
+    @keyframes fast-img {
+        0%{
+        left: -10%;
+          opacity: 1;
+        }
+       
+        80%{
+            left: 85%;
+            opacity: 1;
+        }
+        100%{
+            left: 95%;
+            opacity: 0;
+            display: none;
+        }
+    }
+  
+  }
+  
+
+  @media screen and (min-width:481px) and (max-width:880px){
+   
+    .menu li+li:not(#water-li){
+        margin-left: 0.1rem;
+    }
+    #water-li{
+        margin-left: 0.2rem;
+    }
+    .character h2{
+        padding-top: 3.5rem;
+    }
+    .anime_div img{
+        height: 70px;
+        width: 70px;
+        top: -80px;
+        right: 0;
+    }
+
+  }
+
+   @media screen and (min-width:701px) and (max-width:880px){
+    .bac-top{
+        top: 20%;
+        background-size: cover;
+        height: 500px
+    }
+    
+    #title{
+        font-size: 3.2rem;
+    }
+    #explanation{
+        font-size: 1.3rem;
+    }
+    #table-title{
+        font-size: 2rem;
+    }
+    .menu li{
+        width: 300px;
+    }
+    .menu img{
+        height: 60px;
+        width: 60px;
+    }
+    .menu p{
+        font-size: 1.5rem;
+        padding-top: 0.6rem;
+    }
+    .menu_div{
+        width:220px;
+    }
+    .menu_div li{
+        padding-left: 0.8rem;
+    }
+    .menu_div img{
+        height: 30px;
+        width: 30px;
+    }
+    .menu_div p{
+        padding-top: 3px;
+        font-size: 1rem;
+    }
+    .main-bac-img{
+        background-position: 70% 200px ;
+    }
+    .character h3{
+        font-size: 1.5rem;
+    }
+    .character h4, .character p{
+        font-size: 0.9rem;
+    }
+  }
+  @media screen and (min-width:801px) and (max-width:880px){
+    @keyframes top-menu-kill {
+        0%{
+            opacity: 1;
+        }
+        4.79%{
+            opacity: 1;
+        }
+        4.8%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    @keyframes bac-scroll {
+        0%{
+        
+        }
+         4.79%{
+        background-image: url("../img/原神ロゴ.png");
+         
+        }
+        4.8%{
+            background-image: none;
+        }
+        100%{
+            background-image: none;
+        }
+      }
+      @keyframes bac-scroll-fire {
+        0%{
+        background-image: none;
+        }
+         4.79%{
+        background-image: none;
+         
+        }
+        4.8%{
+         background-image: url(./img/炎.png);
+        }
+        21.49%{
+            background-image: url(./img/炎.png);
+        }
+        21.5%{
+            background-image: url(./img/水.png);
+        }
+        34.9%{
+            background-image: url(./img/水.png);
+        }
+        35%{
+            background-image: url(./img/氷.png);
+        }
+        52.9%{
+            background-image: url(./img/氷.png);
+        }
+        53%{
+            background-image: url(./img/雷.png);
+        }
+        66.19%{
+            background-image: url(./img/雷.png);
+        }
+        66.2%{
+            background-image: url(./img/風.png);
+        }
+        80.89%{
+            background-image: url(./img/風.png);
+        }
+        80.9%{
+            background-image: url(./img/岩.png);
+        }
+        91.79%{
+            background-image: url(./img/岩.png);
+        }
+        91.8%{
+            background-image: url(./img/草.png);
+        }
+        100%{
+            background-image: url(./img/草.png);
+        }
+      }
+    @keyframes menu-scroll {
+        0%{
+         opacity: 0;
+         position: relative;
+         left: -30%;
+        }
+         4.8%{
+         opacity: 0; 
+         left: -30%;
+         
+        }
+        5.3%{
+            opacity: 1;
+            left: 0%;
+        }
+      }
+  }
+  @media screen and (min-width:701px) and (max-width:800px){
+    
+    @keyframes top-menu-kill {
+        0%{
+            opacity: 1;
+        }
+        6.19%{
+            opacity: 1;
+        }
+        6.2%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    @keyframes bac-scroll {
+        0%{
+        
+        }
+         6.19%{
+        background-image: url("../img/原神ロゴ.png");
+         
+        }
+        6.2%{
+            background-image: none;
+        }
+        100%{
+            background-image: none;
+        }
+      }
+      @keyframes bac-scroll-fire {
+        0%{
+        background-image: none;
+        }
+         6.19%{
+        background-image: none;
+         
+        }
+        6.2%{
+         background-image: url(./img/炎.png);
+        }
+        21.49%{
+            background-image: url(./img/炎.png);
+        }
+        21.5%{
+            background-image: url(./img/水.png);
+        }
+        34.9%{
+            background-image: url(./img/水.png);
+        }
+        35%{
+            background-image: url(./img/氷.png);
+        }
+        52.9%{
+            background-image: url(./img/氷.png);
+        }
+        53%{
+            background-image: url(./img/雷.png);
+        }
+        66.19%{
+            background-image: url(./img/雷.png);
+        }
+        66.2%{
+            background-image: url(./img/風.png);
+        }
+        80.89%{
+            background-image: url(./img/風.png);
+        }
+        80.9%{
+            background-image: url(./img/岩.png);
+        }
+        91.79%{
+            background-image: url(./img/岩.png);
+        }
+        91.8%{
+            background-image: url(./img/草.png);
+        }
+        100%{
+            background-image: url(./img/草.png);
+        }
+      }
+    @keyframes menu-scroll {
+        0%{
+         opacity: 0;
+         position: relative;
+         left: -30%;
+        }
+         6.2%{
+         opacity: 0; 
+         left: -30%;
+         
+        }
+        6.7%{
+            opacity: 1;
+            left: 0%;
+        }
+      }
+      @keyframes fast-img {
+        0%{
+        left: -5%;
+          opacity: 1;
+        }
+       
+        80%{
+            left: 90%;
+            opacity: 1;
+        }
+        100%{
+            left: 100%;
+            opacity: 0;
+            display: none;
+        }
+    }
+  }
+
+
+  @media screen and (min-width:551px) and (max-width:700px){
+    .bac-top{
+        top: 30%;
+        background-size: cover;
+        height: 350px
+    }
+    @keyframes top-menu-kill {
+        0%{
+            opacity: 1;
+        }
+        3.89%{
+            opacity: 1;
+        }
+        3.9%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    @keyframes bac-scroll {
+        0%{
+        
+        }
+         3.89%{
+        background-image: url("../img/原神ロゴ.png");
+         
+        }
+        3.9%{
+            background-image: none;
+        }
+        100%{
+            background-image: none;
+        }
+      }
+      @keyframes bac-scroll-fire {
+        0%{
+        background-image: none;
+        }
+         3.89%{
+        background-image: none;
+         
+        }
+        3.9%{
+         background-image: url(./img/炎.png);
+        }
+        21.49%{
+            background-image: url(./img/炎.png);
+        }
+        21.5%{
+            background-image: url(./img/水.png);
+        }
+        34.9%{
+            background-image: url(./img/水.png);
+        }
+        35%{
+            background-image: url(./img/氷.png);
+        }
+        52.9%{
+            background-image: url(./img/氷.png);
+        }
+        53%{
+            background-image: url(./img/雷.png);
+        }
+        66.19%{
+            background-image: url(./img/雷.png);
+        }
+        66.2%{
+            background-image: url(./img/風.png);
+        }
+        80.89%{
+            background-image: url(./img/風.png);
+        }
+        80.9%{
+            background-image: url(./img/岩.png);
+        }
+        91.79%{
+            background-image: url(./img/岩.png);
+        }
+        91.8%{
+            background-image: url(./img/草.png);
+        }
+        100%{
+            background-image: url(./img/草.png);
+        }
+      }
+    @keyframes menu-scroll {
+        0%{
+         opacity: 0;
+         position: relative;
+         left: -30%;
+        }
+         3.9%{
+         opacity: 0; 
+         left: -30%;
+         
+        }
+        4.4%{
+            opacity: 1;
+            left: 0%;
+        }
+      }
+    #title{
+        font-size: 2.5rem;
+    }
+    #explanation{
+        font-size: 1.3rem;
+    }
+    #table-title{
+        font-size: 2rem;
+    }
+    .menu li{
+        width: 230px;
+    }
+    .menu img{
+        height: 45px;
+        width: 45px;
+    }
+    .menu p{
+        font-size: 1.2rem;
+        padding-top: 0.6rem;
+    }
+    .menu_div{
+        width:220px;
+    }
+    .menu_div li{
+        padding-left: 0.8rem;
+    }
+    .menu_div img{
+        height: 30px;
+        width: 30px;
+    }
+    .menu_div p{
+        padding-top: 6.5px;
+        font-size: 0.8rem;
+    }
+    .main-bac-img{
+        background-position: 75% 200px ;
+    }
+    .character-ex{
+        width: 48%;
+        padding: 0 1%;
+        padding-top: 1rem;
+        padding-bottom:2rem;
+    }
+    .character h4, .character p{
+        font-size: 1rem;
+    }
+    .character p{
+        margin-left: 5%;
+    }
+    @keyframes fast-img {
+        0%{
+        left: -5%;
+          opacity: 1;
+        }
+       
+        80%{
+            left: 80%;
+            opacity: 1;
+        }
+        100%{
+            left: 90%;
+            opacity: 0;
+            display: none;
+        }
+    }
+  }
+  @media screen and (min-width:650px) and (max-width:700px){
+    .character h2{
+        font-size: 1.7rem;
+    }
+    .character h3{
+        font-size: 1.6rem;
+    }
+    .character h4{
+        margin-left: 17%;
+    }
+    .character img{
+        width: 140px;
+        height: 140px;
+    }
+  }
+  @media screen and (min-width:600px) and (max-width:649px){
+    .character h2{
+        font-size: 1.5rem;
+    }
+    .character h3{
+        font-size: 1.6rem;
+    }
+    .character h4{
+        margin-left: 11%;
+    }    .character img{
+        width: 140px;
+        height: 140px;
+    }
+}
+@media screen and (min-width:551px) and (max-width:599px){
+    .character h2{
+        font-size: 1.5rem;
+    }
+    .character h3{
+        font-size: 1.4rem;
+    }
+  .character img{
+        width: 130px;
+        height: 130px;
+    }
+}
+
+
+  @media screen and (min-width:481px) and (max-width:550px){
+    .bac-top{
+        top: 30%;
+        background-size: cover;
+        height: 250px;
+    }
+    @keyframes top-menu-kill {
+        0%{
+            opacity: 1;
+        }
+        3.89%{
+            opacity: 1;
+        }
+        3.9%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    @keyframes bac-scroll {
+        0%{
+        
+        }
+         3.89%{
+        background-image: url("../img/原神ロゴ.png");
+         
+        }
+        3.9%{
+            background-image: none;
+        }
+        100%{
+            background-image: none;
+        }
+      }
+      @keyframes bac-scroll-fire {
+        0%{
+        background-image: none;
+        }
+         3.89%{
+        background-image: none;
+         
+        }
+        3.9%{
+         background-image: url(./img/炎.png);
+        }
+        21.49%{
+            background-image: url(./img/炎.png);
+        }
+        21.5%{
+            background-image: url(./img/水.png);
+        }
+        34.9%{
+            background-image: url(./img/水.png);
+        }
+        35%{
+            background-image: url(./img/氷.png);
+        }
+        52.9%{
+            background-image: url(./img/氷.png);
+        }
+        53%{
+            background-image: url(./img/雷.png);
+        }
+        66.19%{
+            background-image: url(./img/雷.png);
+        }
+        66.2%{
+            background-image: url(./img/風.png);
+        }
+        80.89%{
+            background-image: url(./img/風.png);
+        }
+        80.9%{
+            background-image: url(./img/岩.png);
+        }
+        91.79%{
+            background-image: url(./img/岩.png);
+        }
+        91.8%{
+            background-image: url(./img/草.png);
+        }
+        100%{
+            background-image: url(./img/草.png);
+        }
+      }
+    @keyframes menu-scroll {
+        0%{
+         opacity: 0;
+         position: relative;
+         left: -30%;
+        }
+         3.9%{
+         opacity: 0; 
+         left: -30%;
+         
+        }
+        4.4%{
+            opacity: 1;
+            left: 0%;
+        }
+      }
+      .main-bac-img{
+        background-position: 70% 250px ;
+    }
+    .character h2{
+        font-size: 1.3rem;
+    }
+    #title{
+        font-size: 2rem;
+    }
+    #explanation{
+        font-size: 1.1rem;
+    }
+    #table-title{
+        font-size: 1.7rem;
+    }
+    .menu li{
+        width: 180px;
+    }
+    .menu img{
+        height: 35px;
+        width: 35px;
+    }
+    .menu p{
+        font-size: 0.9rem;
+        padding-top: 0.5rem;
+    }
+    .menu_div{
+        width:160px;
+    }
+    .menu_div li{
+        padding-left: 0.5rem;
+    }
+    .menu_div img{
+        height: 25px;
+        width: 25px;
+    }
+    .menu_div p{
+        padding-top: 5.5px;
+        font-size: 0.7rem;
+    }
+    .character-ex{
+        width: 48%;
+        padding: 0 1%;
+        padding-top: 1rem;
+        padding-bottom:2rem;
+    }
+    .character h3{
+        font-size: 1.25rem;
+    }
+
+    .character h4, .character p{
+        font-size: 0.9rem;
+    }
+    .character p{
+        margin-left: 5%;
+    }
+
+  .character img{
+        width: 120px;
+        
+        height: 120px;
+    }
+    @keyframes fast-img {
+        0%{
+        left: -5%;
+          opacity: 1;
+        }
+       
+        80%{
+            left: 80%;
+            opacity: 1;
+        }
+        100%{
+            left: 90%;
+            opacity: 0;
+            display: none;
+        }
+    }
+  }
+
+  @media screen and (max-width:480px){
+    @keyframes top-menu-kill {
+        0%{
+            opacity: 1;
+        }
+        6.49%{
+            opacity: 1;
+        }
+        6.5%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    @keyframes bac-scroll {
+        0%{
+        
+        }
+         6.49%{
+        background-image: url("../img/原神ロゴ.png");
+         
+        }
+        6.5%{
+            background-image: none;
+        }
+        100%{
+            background-image: none;
+        }
+      }
+      @keyframes bac-scroll-fire {
+        0%{
+        background-image: none;
+        }
+         6.49%{
+        background-image: none;
+         
+        }
+        6.5%{
+         background-image: url(./img/炎.png);
+        }
+        21.49%{
+            background-image: url(./img/炎.png);
+        }
+        21.5%{
+            background-image: url(./img/水.png);
+        }
+        34.9%{
+            background-image: url(./img/水.png);
+        }
+        35%{
+            background-image: url(./img/氷.png);
+        }
+        52.9%{
+            background-image: url(./img/氷.png);
+        }
+        53%{
+            background-image: url(./img/雷.png);
+        }
+        66.19%{
+            background-image: url(./img/雷.png);
+        }
+        66.2%{
+            background-image: url(./img/風.png);
+        }
+        80.89%{
+            background-image: url(./img/風.png);
+        }
+        80.9%{
+            background-image: url(./img/岩.png);
+        }
+        91.79%{
+            background-image: url(./img/岩.png);
+        }
+        91.8%{
+            background-image: url(./img/草.png);
+        }
+        100%{
+            background-image: url(./img/草.png);
+        }
+      }
+    @keyframes menu-scroll {
+        0%{
+         opacity: 0;
+         position: relative;
+         left: -30%;
+        }
+         6.5%{
+         opacity: 0; 
+         left: -30%;
+         
+        }
+        7%{
+            opacity: 1;
+            left: 0%;
+        }
+      }
+    #title{
+        font-size: 1.7rem;
+    }
+    #explanation{
+        font-size: 1.1rem;
+    }
+    #table-title{
+        font-size: 1.7rem;
+    }
+
+    .menu li{
+        width: 300px;
+        margin-left: 0.5rem;
+    }
+    .menu img{
+        height: 45px;
+        width: 45px;
+    }
+    .menu p{
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+    }
+    .menu_div{
+        width:160px;
+    }
+    .menu_div li{
+        padding-left: 0.2rem;
+        padding-right: 5px;
+    }
+    .menu_div img{
+        height: 25px;
+        width: 25px;
+    }
+    .menu_div p{
+        padding-top: 4.5px;
+        font-size: 0.6rem;
+        margin-left: 0.1rem;
+    }
+    .main-bac-img{
+        background-position: 80% 250px ;
+    }
+    .character-ex{
+        width: 48%;
+        padding: 0 1%;
+        padding-top: 1rem;
+        padding-bottom:2rem;
+    }
+    .character h2{
+        font-size: 1rem;
+    }
+    .character h3{
+        font-size: 1rem;
+    }
+
+    .character h4, .character p{
+        font-size: 0.65rem;
+    }
+    .character p{
+        margin-left: 5%;
+    }
+
+  .character img{
+        width: 100px;
+        height: 100px;
+    }
+    .anime_div img{
+        top: -55px;
+        right: 0;
+        animation: fast-img 5s ease ;
+    }
+      .anime_div img{
+        height:50px;
+        width: 50px;
+    }
+    @keyframes fast-img {
+        0%{
+        left: -10%;
+          opacity: 1;
+        }
+       
+        80%{
+            left: 80%;
+            opacity: 1;
+        }
+        100%{
+            left: 90%;
+            opacity: 0;
+            display: none;
+        }
+    }
+    .bac-top{
+        top: 35%;
+        background-size: cover;
+        height: 200px;
+    }   
+   
+  }
+  @media screen and (max-width:390px){
+    .main-bac-img{
+       background-size: 150px;
+       background-position: 170px 250px;
+    }
+   
+  }
+  @media screen and (max-width:700px){
+    .character-ex:not(.no-boder-pc){
+        border-bottom: none;
+        
+    }
+    .character-ex:not(.no-boder-tab){
+        border-bottom: 2px solid rgb(207, 198, 198);
+    }
+  } 
+  @media screen and (min-width:480px){
+    a{ 
+        text-decoration: none;
+        color: black;
+    }
+    .fire-li:hover a,.water-li:hover a,.ice-li:hover a,.thunder-li:hover a,.wind-li:hover a,.rock-li:hover a,.grass-li:hover a{
+        color: rgb(79, 79, 79);
+    }
+  }
+  @media screen and (min-width:1500px){
+    .main-bac-img{
+        background-position: 600px 20vh;
+        background-size: 500px;
+    }
+    .character img{
+        height: 270px;
+        width: 270px;
+    }
+    
+  }
+  
+  @media screen and (min-width:1000px) and (max-width:1500px){
+    .bac-top{
+        top: 35%;
+        left: 15%;
+        /* background-size: c; */
+        height: 400px;
+        width: 900px;
+    }   
+  }
+
